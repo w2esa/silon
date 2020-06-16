@@ -1,0 +1,31 @@
+/* .section-stats-bg{
+
+} */
+.section-stats__items {
+  grid-column: center-start/center-end;
+}
+.section-stats__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  &__content {
+
+    &__body {
+      border: 1px solid #ebeef0;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  }
+  // &__img {
+  //   width: 100%;
+  //   height: auto;
+  // }
+  &__name {
+    text-transform: uppercase;
+    font-size: var(--font-display-size);
+  }
+  &__paragraph {
+    color: var(--color-grey);
+    font-size: var(--font-display-size);
+  }
+}

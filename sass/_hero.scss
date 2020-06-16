@@ -1,0 +1,26 @@
+.hero-bg {
+  background: url(../img/hero.png);
+  background-position: center;
+}
+.hero {
+  &-content {
+    grid-column: col-start 1 / col-end 4;
+    width: 80%;
+    font-size: 3.6rem;
+    line-height: 1.7;
+    color: var(--color-black);
+    margin: auto;
+    text-align: center;
+  }
+  &-paragraph {
+    color: var(--color-grey);
+    font-size: var(--font-display-size);
+  }
+  &-right {
+    grid-column: col-start 5 / -1;
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

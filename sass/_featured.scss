@@ -1,0 +1,113 @@
+.featured-product-bg {
+  background: var(--color-white);
+}
+.section-featured-product {
+  grid-column: center-start/center-end;
+
+  &__title {
+    text-align: center;
+    margin: 5rem 0;
+    text-transform: uppercase;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+  }
+  &__item {
+    &--img {
+      width: 100%;
+      height: auto;
+    }
+    &__content {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    &__links {
+      font-size: var(--font-display-size);
+      visibility: hidden;
+      transition: all 300ms ease;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transform: translateY(-9rem);
+      -webkit-transform: translateY(-9rem);
+      -moz-transform: translateY(-9rem);
+      -ms-transform: translateY(-9rem);
+      -o-transform: translateY(-9rem);
+    }
+
+    &__link {
+      background: var(--color-white);
+      padding: 1.5rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      //   &--icon {
+      //   }
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    &:hover &__link {
+      visibility: visible;
+    }
+    &:hover &__link:first-child {
+      animation: faedInUp 200ms;
+      -webkit-animation: faedInUp 200ms;
+    }
+
+    &:hover &__link:nth-child(2) {
+      animation: faedInUp 400ms;
+      -webkit-animation: faedInUp 400ms;
+    }
+    &:hover &__link:last-child {
+      animation: faedInUp 600s;
+      -webkit-animation: faedInUp 600s;
+    }
+    & &__link:hover {
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+
+    &__details {
+      font-size: var(--font-display-size);
+    }
+
+    &__name {
+      text-transform: capitalize;
+      color: var(--color-grey);
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+
+    &__ratings {
+      color: var(--color-primary);
+    }
+    &__rating {
+      &--1 {
+      }
+    }
+    &__price {
+      font-size: inherit;
+      font-weight: 500;
+    }
+  }
+}
+
+// .section-featured-product__item .section-featured-product__item__link:hover {
+//   background: var(--color-primary);
+//   color: var(--color-white);
+// }

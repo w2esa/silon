@@ -1,0 +1,16 @@
+@keyframes faedInUp {
+    from {
+      transform: translateY(-9rem);
+      -webkit-transform: translateY(-9rem);
+      -moz-transform: translateY(-9rem);
+      -ms-transform: translateY(-9rem);
+      -o-transform: translateY(-9rem);
+    }
+    to {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+    }
+  }
